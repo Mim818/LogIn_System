@@ -1,0 +1,223 @@
+/* ===== Reset & Base (Modern Minimalist Dark & Emerald Theme) ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* Deep Slate Background */
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+a {
+  color: #10b981; /* Emerald Accent */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.subtitle {
+  color: #94a3b8;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a.btn:hover {
+  text-decoration: none;
+  opacity: 1;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+.btn-small {
+  width: auto;
+  padding: 8px 18px;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+/* ===== Login & Register (Floating Glassmorphism Style) ===== */
+.auth-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: radial-gradient(circle at top left, #1e293b, #0f172a);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  padding: 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.auth-card h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.auth-card .subtitle {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  color: #f8fafc;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.radio-group {
+  display: flex;
+  gap: 24px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.radio-group label {
+  font-weight: normal;
+  margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #94a3b8;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.form-row .checkbox {
+  margin-bottom: 0;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== Dashboard Layout (Header-based Sidebar Layout) ===== */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Light modern dashboard body */
+  color: #1e293b;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  color: #334155;
+  padding: 30px 0;
+  border-right: 1px solid #e2e8f0;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 14px 28px;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  border-left: 4px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #f1f5f9;
+  color: #059669;
+  border-
